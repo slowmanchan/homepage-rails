@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :users, :controllers => { registrations: 'registrations' }
   root 'static_pages#home'
   get '/about' => 'static_pages#about'
   get '/portfolio' => 'static_pages#portfolio'
   get '/contact' => 'static_pages#contact'
+  get '/posts' => 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -155,7 +155,7 @@ hr {
   height: 100%;
 }
 /* about section */
-.about, .tools-content, .contact{
+.about, .tools-content{
   overflow: auto;
   text-align: center;
   width: 80%;
@@ -165,7 +165,7 @@ hr {
 .about h1,  .tools-content h2{
   margin-top: 60px;
 }
-.me-content, .tools-content, .contact {
+.me-content, .tools-content {
   color: white;
   width: 70%;
   margin: auto;
@@ -184,43 +184,8 @@ hr {
 }
 
 
-/* contact section */
-.contact {
-  width: 100%;
-  background-color: white;
-  color: hsl(0, 0%, 30%);
 
-  margin-top: 200px;
-}
-.contact form {
-  font-size: 150%;
-  width: 70%;
-  margin: 0 auto;
-}
-#name, #mail {
-  height: 70px;
-  width: 50%;
-  float: left;
-}
-#msg {
-  display: block;
-  height: 200px;
-  width: 100%;
-  clear: both;
-}
-.submit-btn button{
-  width: 111px;
-  height: 70px;
-  margin: 20px;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  background-color: #f44336;
-  transition: all 0.3s;
-}
-.submit-btn button:hover {
-  background-color: #b71c1c;
-}
+
 /* footer */
 .main-footer {
   line-height: 100px;

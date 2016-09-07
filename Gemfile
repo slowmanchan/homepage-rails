@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'devise'
+gem 'activeadmin', github: 'activeadmin'
 gem 'jquery-slick-rails'
 gem 'jquery-turbolinks'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

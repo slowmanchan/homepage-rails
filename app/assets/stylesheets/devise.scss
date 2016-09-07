@@ -1,0 +1,56 @@
+.user-form {
+  background-color: #2196f3;
+  width: 50%;
+  margin: 150px auto 60px auto;
+}
+.user-form {
+  text-align: center;
+  color: white;
+}
+.user-form h2 {
+  margin-bottom: 20px;
+}
+.actions input, .log-in-btn, .sign-in-btn{
+  font-weight: bolder;
+  margin: 15px auto 0 auto;
+  padding: 10px;
+  height: 40px;
+  width: 40%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color:  #f44336;
+  transition: all 0.3s;
+
+}
+.actions input:hover, .log-in-btn:hover, .sign-in-btn:hover {
+  background-color: #b71c1c;
+
+}
+.log-in-btn  {
+  background-color: #0d47a1;
+
+}
+
+.field input{
+  width: 50%;
+  height: 40px;
+
+}
+.field {
+
+  margin-top: 10px;
+}
+#user_remember_me {
+  width: 0;
+  height: 0;
+}
+.alt-sign-up a {
+  line-height: 300%;
+}
+.user-form a:hover {
+  color: #0d47a1;
+}
+.user-form label {
+  text-transform: lowercase;
+}
