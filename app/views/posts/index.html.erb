@@ -5,9 +5,13 @@
   <% @posts.each do |post| %>
 
     <div class="post-wrapper">
+      <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
       <h1><%= link_to post.title, post %></h1>
-        <p><%= post.created_at.strftime("%B, %d, %Y") %></p>
-        <p><%= post.body %></p>
+      <div class="body">
+        <p ><%= truncate post.body, length: 500 %></p>
+        <br>
+        <%= link_to '(more...)', post %>
+      </div>
       <hr>
     </div>
 
