@@ -10,18 +10,18 @@
 }
 /* home page */
 .blue-wrapper {
-  background-color: #2196f3;
+  background-color: #1a237e;
   padding: 50px;
 }
 .light-blue-wrapper {
-  background-color: #e3f2fd;
+  background-color: #e8eaf6;
 }
 /* main site header */
 .main-nav-bar {
   width: 100%;
   height: 100px;
   padding: 15px 70px;
-  background-color:  #2196f3;
+  background-color:  #1a237e;
   font-size: 100%;
   font-weight: 800;
   position: fixed;
@@ -47,6 +47,8 @@
   transition: all 0.3s;
 }
 #logo li a {
+  font-family: 'Lobster', sans-serif;
+  text-transform: capitalize;
   font-size: 40px;
   font-weight: 800px;
   float: left;
@@ -56,7 +58,7 @@
   color: #0d47a1;
 }
 #emphasis {
-background:  #f44336;
+background:   #ff9800;
 }
 #right-side-items a:hover {
   color: #0d47a1;
@@ -125,6 +127,10 @@ background:  #f44336;
   color: white;
   font-size: 120%;
 
+}
+.headline h2 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
 }
 hr {
   border: 2px solid hsl(0, 0%, 30%);
