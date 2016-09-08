@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="user-form">
+  <h1>new post</h1>
+
+  <%= form_for :post, url: posts_path do |f| %>
+    <div class="field">
+      <%= f.hidden_field :title %>
+      <%= f.text_field :title, autofocus: true, placeholder: "title"%>
+    </div>
+    <div class="field">
+      <%= f.hidden_field :body %>
+      <%= f.text_area :body, placeholder: "type your message" %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
+</div>
