@@ -5,7 +5,7 @@
 .container {
   width: 100%;
   margin: 100px auto 0 auto;
-  background-color:  white;
+
   overflow: auto;
 }
 /* home page */
@@ -16,9 +16,12 @@
 .light-blue-wrapper {
   background-color: #c5cae9;
 }
+.light-purple-wrapper {
+
+  background-color: #e8eaf6;
+}
 /* main site header */
 .main-nav-bar {
-  font-family: 'Comfortaa', sans-serif;
   width: 100%;
   height: 100px;
   padding: 15px 70px;
@@ -147,9 +150,7 @@ hr {
   width: 80%;
   margin: 0 auto;
 }
-.portfolio{
-  margin-top: 200px;
-}
+
 .portfolio h1, .about h1{
   margin-top: 60px;
   font-size: 400%;
@@ -182,7 +183,6 @@ hr {
   text-align: center;
   width: 80%;
   color: hsl(0, 0%, 30%);
-
 }
 .about h1,  .tools-content h2{
   margin-top: 60px;
@@ -192,11 +192,10 @@ hr {
   margin: auto;
   overflow: auto;
 }
-.left-part, .right-part{
-  text-align: justify;
-  width: 50%;
+.col {
+  width: 33.3333%;
   float: left;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 /* tools section */
@@ -208,7 +207,11 @@ hr {
   margin: 20px 0;
 }
 
+.tools-content img {
+  width: 100px;
+  height: 100px;
 
+}
 
 
 /* footer */
