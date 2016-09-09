@@ -1,10 +1,12 @@
 <div class="container">
   <div class="wrapper">
-  
+
     <p><%= comment.name %></p>
     <p><%= comment.body %></p>
     <p><%= time_ago_in_words(comment.created_at) %> Ago</p>
-    <p><%= link_to "Delete", [comment.post, comment], method: :delete,
-    data: {confirm: "are you sure?"} %></p>
+    <% if user_signed_in? && (comment.user_id == current_user.id ) || current_user.admin %>
+      <p><%= link_to "Delete", [comment.post, comment], method: :delete,
+             data: {confirm: "are you sure?"} %></p>
+    <% end %>
   </div>
 </div>

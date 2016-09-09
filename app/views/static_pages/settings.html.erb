@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Hello <%= current_user.first_name %></h1>
+    <ul>
+      <% @comments.each do |comment| %>
+        <li>
+           <h2><%= comment.name %></h2>
+           <%= time_ago_in_words(comment.created_at) %> ago<br>
+           <%= comment.body %>
+        </li>
+      <% end %>
+    </ul>
+  </div>

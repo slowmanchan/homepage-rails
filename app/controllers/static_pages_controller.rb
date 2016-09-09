@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
 
   def portfolio
   end
+
+  def settings
+    @comments = current_user.comments
+  end
 end

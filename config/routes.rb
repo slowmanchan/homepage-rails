@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
   get '/portfolio' => 'static_pages#portfolio'
   get '/contact' => 'static_pages#contact'
+  get '/settings' => 'static_pages#settings'
   resources :posts do
     resources :comments
   end
