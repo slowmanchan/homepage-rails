@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if current_user.admin?
+    if current_user.try(:admin)
       if @post.save
         redirect_to @post
       else
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if current_user.admin?
+    if current_user.try(:admin)
       if @post.update(params[:post].permit(:title, :body))
         redirect_to @post
       else
@@ -46,7 +46,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    if current_user.admin?
+    if current_user.try(:admin)
      @post.destroy
      redirect_to posts_path
     else

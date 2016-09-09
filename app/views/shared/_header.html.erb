@@ -11,8 +11,6 @@
           <% if user_signed_in? %>
                 <li><%= link_to "settings", settings_path %></li>
                 <li><%= link_to "log out", destroy_user_session_path, method: :delete %></li>
-  
-
           <% end %>
           <li><%= link_to "contact", contact_path %></li>
         <li id="emphasis"><a href="#">resume</a></li>
