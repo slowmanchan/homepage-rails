@@ -7,8 +7,15 @@
   text-align: center;
   color: white;
 }
+.user-form hr {
+  border-color: white;
+}
 .user-form h2 {
   margin-bottom: 20px;
+}
+.user-form textarea {
+  width: 60%;
+  height: 200px;
 }
 .actions input, .log-in-btn, .sign-in-btn{
   font-weight: bolder;

@@ -1,12 +1,19 @@
-<div class="container">
-  <h1>Hello <%= current_user.first_name %></h1>
+<div class="container light-blue-wrapper">
+  <div class="wrapper">
+
+  <div class="post-wrapper">
+    <h1>Hello <%= current_user.first_name %></h1>
     <ul>
       <% @comments.each do |comment| %>
-        <li>
+        <li class="body">
            <h2><%= comment.name %></h2>
-           <%= time_ago_in_words(comment.created_at) %> ago<br>
+           <p class="date"><%= time_ago_in_words(comment.created_at) %> ago</p><br>
            <%= comment.body %>
         </li>
+        <br>
       <% end %>
     </ul>
+
   </div>
+</div>
+</div>

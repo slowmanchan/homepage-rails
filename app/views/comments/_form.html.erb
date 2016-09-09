@@ -1,12 +1,13 @@
-
+<div class="comment-form">
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-
+    <%= f.hidden_field :name %>
+    <%= f.text_field :name, placeholder: 'title' %>
+    <br>
+    <%= f.hidden_field:body %>
+    <%= f.text_area :body, placeholder: 'leave your thoughts here'%>
+    <br>
     <%= f.submit %>
 
 <% end %>
+</div>

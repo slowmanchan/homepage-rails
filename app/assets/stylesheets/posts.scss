@@ -8,22 +8,31 @@
 }
 .post-wrapper {
   margin: 50px;
-}
-.post-wrapper h1  {
-  text-align: center;
 
-  margin-bottom: 50px
 }
-.post-wrapper h1 a {
+
+
+.post-wrapper h1 {
   font-family: 'Raleway', sans-serif !important;
-  font-size: 220%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 420%;
   font-weight: 900;
   text-decoration: none;
   color: hsl(0, 0%, 20%);
 }
+
 .post-wrapper a {
+  transition: all 0.3s;
   text-decoration: none;
-  color:  #3f51b5;
+  color: hsl(0, 0%, 20%);
+}
+.post-wrapper a:hover {
+  color: #303f9f;
+
+}
+.post-wrapper h2{
+  text-align: center;
 }
 .post-wrapper .date {
   text-align: center;
@@ -33,6 +42,34 @@
 .post-wrapper .body {
   font-size: 130%;
   background-color: white;
-  padding: 70px;
+  padding: 50px 70px;
   border-radius: 7px;
+}
+#comments h1 {
+  margin-left: 60px;
+}
+.comment-form {
+  padding: 30px 60px;
+}
+.comment-form input  {
+  width: 60%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.comment-form textarea {
+  width: 70%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.comment-form [type=submit] {
+  border-radius: 5px;
+  border: none;
+  background-color:  #ff9800;
+  color: white;
+  width: 30%;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+.comment-form [type=submit]:hover {
+  background-color: #e65100;
 }

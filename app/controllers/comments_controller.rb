@@ -16,7 +16,12 @@ class CommentsController < ApplicationController
     redirect_to post_path(@post)
   end
 
-  
+  def edit
+  end
+
+  def update
+  end
+
   private
 
   def comment_params
