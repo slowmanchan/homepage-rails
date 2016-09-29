@@ -1,0 +1,25 @@
+@import 'colors';
+/* footer */
+.main-footer, .sub-footer {
+  text-align: center;
+  color: white;
+}
+.main-footer {
+  line-height: 50px;
+  background-color: $dark-blue;
+}
+
+.sub-footer {
+  padding: 20px;
+  background-color: $light-blue;
+  ul {
+    margin: auto;
+    width: 50%;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    padding-right: 10px;
+  }
+}
