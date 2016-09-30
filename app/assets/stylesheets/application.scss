@@ -26,6 +26,9 @@
   list-style: none;
 }
 
+body {
+  margin: 100px 0 0 0 ;
+}
 a {
   color: white;
   text-decoration: none;
@@ -40,6 +43,12 @@ hr {
   width: 180px;
   margin: 30px auto;
 }
-.btn {
+button {
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  font-size: 150%;
+  padding: 10px 40px;
 
 }

@@ -2,7 +2,7 @@
 
 .container {
   width: 100%;
-  margin: 100px auto 0 auto;
+  margin: 0 auto 0 auto;
 
   overflow: auto;
 }
@@ -72,6 +72,7 @@
   color: $dark-grey;
   width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .portfolio h1, .about h1{
@@ -88,11 +89,11 @@
     border-radius: 5px;
     border: 1px solid black;
     float: left;
+    margin-bottom: 50px;
   }
   p {
     width: 50%;
     margin: 0 auto 50px auto;
-    text-align: center;
   }
 }
 
@@ -121,6 +122,7 @@
   width: 70%;
   margin: auto;
   overflow: auto;
+  padding-bottom: 50px;
 }
 .col {
   width: 33.3333%;
@@ -141,4 +143,151 @@
     width: 100px;
     height: 100px;
   }
+}
+/* mobile links */
+.mobile-links {
+  display: none;
+}
+
+
+.mobile-nav {
+  display: none;
+}
+
+
+@media screen and ( max-width: 900px ) {
+  body {
+    margin-top: 50px !important;
+  }
+  .tools-content {
+    width: 100%;
+  }
+  .nav-bar #right-side-items {
+     display: none;
+  }
+  .mobile-nav {
+    display: inline;
+  }
+  #logo {
+    display: none;
+  }
+  .nav-bar {
+    height: 60px;
+    padding: 0;
+  }
+  .user-form {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .post-wrapper {
+   margin-left: 0;
+   margin-right: 0;
+    width: 100%;
+  }
+
+}
+
+@media screen and ( max-width: 600px) {
+   body {
+     margin: 50px 0 0 0 !important;
+
+   }
+   .blue-wrapper {
+     padding: 0;
+   }
+   .slider {
+     width: 300px;
+     margin: 0;
+   }
+  .mobile-links {
+    display: inline;
+  }
+  .tools-content {
+    & .col {
+      width: 100%;
+    }
+  }
+  .about {
+    width: 100%;
+    padding: 10px;
+  }
+  .me-content {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  .portfolio div {
+    float: none;
+    width: 100%;
+
+  }
+  .portfolio p {
+    width: 100%;
+
+  }
+  .container {
+    margin: 0;
+  }
+  .sub-footer ul {
+    width: 100%;
+  }
+
+
+  ul {
+    height: 100%;
+
+  }
+
+}
+
+/* hamburger menu */
+
+.menu-btn {
+  padding: 15px;
+}
+.menu-btn div {
+  position: absolute;
+
+
+  margin-top: -0.5em;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 200;
+  vertical-align: middle;
+  z-index: 99;
+}
+.menu-btn span {
+  display: block;
+  width: 29px;
+  height: 3px;
+  margin: 4px 0;
+  background: white;
+  z-index: 99;
+}
+.responsive-menu {
+  display: none;
+
+  background: $light-blue;
+  li {
+    text-align: center;
+
+  }
+  a {
+    display: block;
+    padding: 10px;
+    color: $indigo;
+  }
+  a:hover {
+    background-color: $dark-blue;
+    color: white;
+    transition: background-color 0.3s;
+  }
+}
+.expand {
+  display: block !important;
+
 }

@@ -12,22 +12,25 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2;
   transition: height 0.3s;
-  li {
+  & #right-side-items li {
     line-height: 75px;
     padding: 0 20px;
     float: left;
     transition: all 0.3s;
   }
 }
-
+#logo{
+  display: inline-block
+}
 #logo li a {
   font-family: 'Lobster', sans-serif;
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 800px;
   float: left;
+
 }
 #emphasis {
 background:  $dark-orange;

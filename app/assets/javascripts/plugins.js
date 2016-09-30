@@ -7,4 +7,7 @@ $(document).on('turbolinks:load', function(){
     fade: true,
     cssEase: 'linear',
   });
+  $('.menu-btn').click(function(){
+    $('.responsive-menu').toggleClass('expand');
+  });
 });
