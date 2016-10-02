@@ -5,15 +5,15 @@
     </div>
     <div id="right-side-items">
       <li><%= link_to "portfolio", portfolio_path %></li>
-          <li><%= link_to "about", about_path %></li>
-          <li><%= link_to "blog", posts_path %></li>
+      <li><%= link_to "about", about_path %></li>
+      <li><%= link_to "blog", posts_path %></li>
 
-          <% if user_signed_in? %>
-                <li><%= link_to "settings", settings_path %></li>
-                <li><%= link_to "log out", destroy_user_session_path, method: :delete %></li>
-          <% end %>
-          <li><%= link_to "contact", contact_path %></li>
-        <li id="emphasis"><a href="#">resume</a></li>
+      <% if user_signed_in? %>
+      <li><%= link_to "settings", settings_path %></li>
+      <li><%= link_to "log out", destroy_user_session_path, method: :delete %></li>
+      <% end %>
+      <li><%= link_to "contact", contact_path %></li>
+      <li id="emphasis"><a href="#">resume</a></li>
     </div>
     <div class="mobile-nav">
       <div class="menu-btn" id="menu-btn">
@@ -35,8 +35,8 @@
     </div>
 
 
-    </div>
-  </ul>
+  </div>
+</ul>
 
 
 
