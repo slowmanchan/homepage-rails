@@ -20,7 +20,7 @@
 
 /* slider carousel */
 .slider {
-  width: 550px;
+  width: 80%;
   height: 330px;
   margin: auto;
   img {
@@ -159,6 +159,14 @@
   body {
     margin-top: 50px !important;
   }
+
+  .slider {
+    width: 100%;
+
+  }
+  .jumbotron {
+    margin: auto;
+  }
   .tools-content {
     width: 100%;
   }
@@ -195,15 +203,17 @@
      margin: 50px 0 0 0 !important;
 
    }
+
+
    .jumbotron {
-     margin: 0;
-     width: 100%;
+     padding-top: 20px;
+
    }
    .blue-wrapper {
      padding: 0;
    }
    .slider {
-     width: 300px;
+     width: 100%;
      margin: 0;
    }
   .mobile-links {
