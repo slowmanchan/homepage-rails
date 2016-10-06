@@ -83,6 +83,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
     formtastic (3.1.4)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
@@ -181,6 +183,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    sendgrid (1.2.4)
+      json
     spring (1.7.2)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
@@ -216,6 +220,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  figaro
   jbuilder (~> 2.0)
   jquery-rails
   jquery-slick-rails
@@ -224,6 +229,7 @@ DEPENDENCIES
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  sendgrid
   spring
   sqlite3
   turbolinks

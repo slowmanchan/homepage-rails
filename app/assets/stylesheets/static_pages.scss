@@ -1,4 +1,32 @@
 @import 'colors';
+/* alerts */
+.success, .danger {
+  display: inline-block;
+  padding: 20px;
+  font-size: 150%;
+  position: absolute;
+  z-index: 99;
+  border-radius: 5px;
+  left: 100px;
+}
+.success {
+  background-color: #69F0AE;
+  color: #004D40;
+  border: 2px solid #004D40;
+
+}
+.danger {
+  background-color: #ff8a80;
+  color: #d50000;
+  border: 2px solid #d50000;
+}
+/* slick slider */
+
+.slick-dots {
+  li button {
+    transform: scale(2);
+  }
+}
 
 .container {
   width: 100%;

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'sendgrid'
+gem 'figaro'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'jquery-slick-rails'

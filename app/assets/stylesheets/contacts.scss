@@ -1,0 +1,26 @@
+@import 'colors';
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 100px;
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  hr {
+    border-color: white;
+  }
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 150%;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 200px;
+  }
+  
+
+}

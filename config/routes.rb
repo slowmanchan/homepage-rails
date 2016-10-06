@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get '/about' => 'static_pages#about'
   get '/portfolio' => 'static_pages#portfolio'
-  get '/contact' => 'static_pages#contact'
+  resources :contacts, except: [:show,:index, :destroy]
   get '/settings' => 'static_pages#settings'
   resources :posts do
     resources :comments
